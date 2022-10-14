@@ -1,0 +1,41 @@
+****Mountain Fall Documentation****
+
+Base on futurized setting territory control between zones D&D stylization extensive listings
+Travel to zones and enter different areas inside of zones building on maps and collections
+--------------------------------------------------------------------------------------------
+Bases: a Base can be placed anywhere on the map and it will allow access to have
+land occupation, store items, build, upgrade
+
+Inside of bases:
+there will be a vacant land block where forestry can clear areas to build and wood
+can be collected, however stone can be mined it will take excessive for to move mountains
+water can be pumped with pumping systems and store into water capsules water quality
+can be microfiltrated to better the quality with special chemicals or distilation
+
+Territories:
+different zones can be captured depending on power and number of force occupying total
+control, farms can be deployed to render astronomicity of a land area within a zone
+they are the boudaries on the map,
+the percentage of territory is dictated with the percecnt of power and force, the territory
+will be colored accordingly to the team
+
+Hostile Areas:
+inside of a Territory there can be sections where there is current activity of warfare
+to access these areas the user will click on them and there will be a scourge of units
+that can be strategically placed, when the area is froght and won then that section adds
+to the percentage with in a territory
+
+Quality Control:
+the amount of seeds and crops on a land increases the land areas value where this
+can improve the cost of the sanctioned land setting
+
+Items:
+	Weaponry**
+	  Melee:
+ 	  Weaponry & Firearms:
+	  Heavy Artillary:
+Vehicles:
+	Drones:
+	Air Crafts:
+	Tanks:
+	Armory Carriers:
