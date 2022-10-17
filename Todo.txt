@@ -1,0 +1,34 @@
+*Todo*
+-----------------------------------------------------------------------------------------
+World Map:
+1) StatusBar: wood, stone, money, water
+
+Meadows1(Hakgrenoe(Emerald Barony)):
+1) WaterPolygon2d: clear trees, (collect water right click)
+2) RightClick: drop down menu (harvest trees), deleted the tree add wood to status
+3) ExitMenu: leave scene button (spawn player on worldmap and spawn
+at position relative to the region left)
+4) BuildBase: allow player to rightclick and set a base at postion, when collecting store 
+at base, also have a capcity limit; if wanting more ,then wherehouse has to be build,
+when base is build, put a base icon at the region on the world map
+
+**StatusBar shown in Meadows1: wood, stone, money, water;
+water can be stored on the ground in buckets; to store the water, a tank can be build to
+store the water; upgrade with an attachment of a distiller to purify the water
+making it more valuable
+
+wood & stone; initially can be collected with right click but is alot slower then using
+an axe and pickaxe, these can be created and show in the tool menu and makes harvesting
+alot faster
+
+Ground collecting:
+silica and clay can be collected right clicking on the ground a shovel makes it faster
+these can be used to make a foundry
+
+Building: there is a menu that appears from the bottom of the screen where things can be built
+from, scroll pane to move across to select the building and it can be placed on the ground
+with clicking it and dragging it into place onto the ground
+
+WaterPiping:
+click vertices and draw a line from water to a building to connect it to make a
+running water source, then add liters of water to a tank

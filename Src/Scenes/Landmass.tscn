@@ -1,6 +1,17 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Src/Assets/Krita/Main Map-Larger-test.jpg" type="Texture" id=1]
+[ext_resource path="res://Src/Assets/Krita/Main Map-Larger-test2.jpg" type="Texture" id=1]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Area2D
+
+func _ready():
+	pass # Replace with function body.
+
+func _on_HakgrenoeEmerald_Barony_input_event(viewport, event, shape_idx):
+	if event.is_action_pressed(\"click_to_move\"):
+		get_tree().change_scene(\"res://Src/Scenes/MedowsScene1.tscn\")
+"
 
 [node name="Landmass" type="Node2D"]
 
@@ -17,4 +28,26 @@ position = Vector2( -3500, -2200 )
 color = Color( 0, 0.360784, 0.980392, 0.317647 )
 polygon = PoolVector2Array( -498, -258, 642, -258, 602, 71, 610, 97, 653, 158, 664, 190, 661, 211, 644, 224, 613, 222, 583, 218, 555, 226, 530, 250, 510, 311, 498, 337, 485, 350, 442, 316, 389, 295, 328, 282, 210, 273, 177, 269, 117, 260, 64, 237, 36, 235, -23, 250, -57, 258, -81, 252, -108, 235, -130, 214, -176, 182, -208, 169, -266, 156, -325, 150, -425, 152, -500, 152 )
 
-[node name="Polygon2D2" type="Polygon2D" parent="Territories"]
+[node name="Aransukauri" type="Polygon2D" parent="Territories"]
+position = Vector2( -2385, -1398 )
+z_index = 1
+color = Color( 0, 0.360784, 0.980392, 0.317647 )
+polygon = PoolVector2Array( -422, -2, -338, -77, -196, -187, -121, -234, -92, -246, -4, -248, 31, -251, 114, -281, 199, -304, 257, -298, 259, -263, 265, -236, 282, -219, 306, -223, 327, -231, 335, -204, 342, -167, 366, -146, 372, -121, 359, -93, 351, -66, 351, -40, 359, -17, 367, 13, 367, 98, 364, 124, 342, 137, 325, 156, 302, 172, 272, 167, 231, 141, 215, 146, 196, 181, 155, 227, 146, 252, 138, 271, 81, 311, 61, 336, -105, 331, -200, 337, -228, 343, -232, 313, -241, 290, -259, 257, -302, 221, -352, 181, -375, 150, -392, 95 )
+
+[node name="Regions" type="Node2D" parent="Territories"]
+
+[node name="Hakgrenoe(Emerald Barony)" type="Area2D" parent="Territories/Regions"]
+z_index = 1
+script = SubResource( 1 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Territories/Regions/Hakgrenoe(Emerald Barony)"]
+visible = false
+position = Vector2( -2271, -1553 )
+polygon = PoolVector2Array( 237, 89, 180, 104, 98, 76, 9, 117, -105, 79, -181, 70, -246, -3, -263, -61, -220, -85, -183, -92, -133, -92, -88, -96, -16, -123, 79, -144, 119, -149, 146, -140, 146, -111, 155, -80, 168, -60, 208, -74, 217, -65, 231, -16, 246, 0, 256, 16, 257, 42, 241, 71 )
+
+[node name="CollisionPolygon2D2" type="Polygon2D" parent="Territories/Regions/Hakgrenoe(Emerald Barony)"]
+position = Vector2( -2271, -1553 )
+color = Color( 0.313726, 1, 0, 0.356863 )
+polygon = PoolVector2Array( 237, 89, 180, 104, 98, 76, 9, 117, -105, 79, -181, 70, -246, -3, -263, -61, -220, -85, -183, -92, -133, -92, -88, -96, -16, -123, 79, -144, 119, -149, 146, -140, 146, -111, 155, -80, 168, -60, 208, -74, 217, -65, 231, -16, 246, 0, 256, 16, 257, 42, 241, 71 )
+
+[connection signal="input_event" from="Territories/Regions/Hakgrenoe(Emerald Barony)" to="Territories/Regions/Hakgrenoe(Emerald Barony)" method="_on_HakgrenoeEmerald_Barony_input_event"]

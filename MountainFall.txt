@@ -39,3 +39,18 @@ Vehicles:
 	Air Crafts:
 	Tanks:
 	Armory Carriers:
+
+Bartering:
+items cam be sold to and from players
+
+Shops:
+items can be sold in shops that the players build
+	*counter-tops and cabinets
+Animals & Farms:
+horses & cows & pigs & sheep & other animals can be bred and eat wheat and grass & feeds
+*Animal growth sizes depend on feed
+----------------------------------------------------------------------------------------
+Metals & Minerals:
+metals and minerals can be collected from stones and rocks
+metals can be collected and stored and sold
+metals and minerals and other items shipped

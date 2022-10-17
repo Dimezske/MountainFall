@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://World.gd" type="Script" id=1]
+[ext_resource path="res://Src/Scripts/World.gd" type="Script" id=1]
 [ext_resource path="res://Src/Scenes/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Src/Scenes/Landmass.tscn" type="PackedScene" id=3]
 
